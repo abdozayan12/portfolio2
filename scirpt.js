@@ -26,3 +26,25 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+const Name = document.getElementById('name');
+const emailEl = document.getElementById('email');
+const Text = document.getElementById('textArea');
+
+form.addEventListener('click', () => {
+  const formData = {
+    Name: document.getElementById('name').value,
+    emailEl: document.getElementById('email').value,
+    Text: document.getElementById('textArea').value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+const getData = localStorage.getItem('formData');
+const prefillData = JSON.parse(getData);
+
+if (prefillData !== null) {
+  Name.value = prefillData.Name;
+  emailEl.value = prefillData.emailEl;
+  Text.value = prefillData.Text;
+}
