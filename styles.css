@@ -155,6 +155,10 @@
     width: 100%;
   }
 
+  .modal img {
+    width: 100%;
+  }
+
   .languag li img {
     width: 100%;
   }
@@ -467,6 +471,7 @@
     font-size: 17px;
     font-weight: 500;
   }
+
   .modal {
     display: none;
     position: fixed;
@@ -485,10 +490,6 @@
     margin: 0 auto;
     overflow: auto;
     padding: 0;
-  }
-
-  .modal img {
-    width: 100%;
   }
 
   .modal .modal-card {
@@ -957,6 +958,10 @@
     flex-direction: row;
   }
 
+  .modal img {
+    width: 100%;
+  }
+
   .languag li img {
     width: 100%;
   }
@@ -1068,17 +1073,12 @@
     background-color: rgba(193, 199, 208, 0.85);
   }
 
-  .modal img {
-    width: 100%;
-  }
-
   .modal .modal-card {
     background: #fff;
     border-radius: 16px;
     padding: 20px;
     max-width: 1156px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
     margin: 10px;
   }
 
